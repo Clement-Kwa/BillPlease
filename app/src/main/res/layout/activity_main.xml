@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:id="@+id/textAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/text1" />
+
+    <EditText
+        android:id="@+id/editAmt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/text2"
+        android:inputType="numberDecimal" />
+
+    <TextView
+        android:id="@+id/textPax"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text3" />
+
+    <EditText
+        android:id="@+id/editPax"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/text4"
+        android:inputType="number" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <ToggleButton
+            android:id="@+id/tgSVS"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textOff="@string/tg1N"
+            android:textOn="@string/tg1Y" />
+
+        <ToggleButton
+            android:id="@+id/tgGST"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="ToggleButton"
+            android:textOff="@string/tg2N"
+            android:textOn="@string/tg2Y" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textDiscount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/text5" />
+
+    <EditText
+        android:id="@+id/editDis"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/text6"
+        android:inputType="number" />
+
+    <RadioGroup
+        android:id="@+id/radioGrp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <RadioButton
+            android:id="@+id/rbCash"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/rad1" />
+
+        <RadioButton
+            android:id="@+id/rbPayNow"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/rad2" />
+
+    </RadioGroup>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/btnSplit"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn1" />
+
+        <Button
+            android:id="@+id/btnReset"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/btn2" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/result1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result1" />
+
+    <TextView
+        android:id="@+id/result2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/result2" />
+
+</LinearLayout>
