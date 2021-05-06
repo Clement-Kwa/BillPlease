@@ -87,18 +87,33 @@ public class MainActivity extends AppCompatActivity {
 
                     //calculate everything + discount
 
-                    result1.setText("Total Bill: $"+totalBill);
+                    result1.setText("Total Bill: $"+String.format("%.2f",totalBill));
 
                     double totalBillSplit=0;
                     if(amountPax>1){
                         totalBillSplit=totalBill/amountPax;
-                        result2.setText("Each pays: $"+totalBillSplit+append);
+                        result2.setText("Each pays: $"+String.format("%.2f",totalBillSplit)+append);
                     }
                     else{
-                        result2.setText("Each pays: $"+totalBill+append);
+                        result2.setText("Each pays: $"+String.format("%.2f",totalBillSplit)+append);
                     }
                     //clement
                 }
+
+                //reset
+                btnReset.setOnClickListener(new View.OnClickListener() {
+                    @Override
+                    public void onClick(View v) {
+                        editAmt.setText("");
+                        editPax.setText("");
+                        editDis.setText("");
+                        tgSVS.setChecked(false);
+                        tgGST.setChecked(false);
+                        radioGrp.clearCheck();
+                        result1.setText("Total Bill:");
+                        result2.setText("Each pays:");
+                    }
+                });
             }
         });
     }
