@@ -97,12 +97,8 @@ public class MainActivity extends AppCompatActivity {
                     else{
                         result2.setText("Each pays: $"+totalBill+append);
                     }
+                    //clement
                 }
-
-
-
-
-
             }
         });
     }
